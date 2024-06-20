@@ -34,7 +34,7 @@ const NavbarLayout = (props) => {
             </div>
           </div>
         </div>
-        <div className='flex flex-col justify-center relative lg:hidden'>
+        <div className='flex flex-col justify-center relative lg:hidden h-full'>
           <div
             id='sidebar'
             className={`w-1/2 bg-neutral-50 absolute z-10 h-screen left-0 -top-16 ${
