@@ -10,6 +10,7 @@ import Navbar from "../components/Fragment/Navbar";
 import NavbarLayout from "../components/Layouts/Navbar";
 import Profile from "../components/Elements/Profile";
 import { IoMdDownload } from "react-icons/io";
+import Card from "../components/Fragment/Card";
 
 function Home() {
   return (
@@ -59,8 +60,8 @@ function Home() {
               </div>
             </div>
 
-            <div className='col-span-12 lg:col-span-9  '>
-              <div className='flex justify-between flex-wrap'>
+            <div className='col-span-12 lg:col-span-9 w-full '>
+              <div className='flex justify-between flex-wrap '>
                 <div className=''>
                   <h1 className='text-xl lg:text-3xl font-semibold'>
                     Hello, Everyone{" "}
@@ -93,24 +94,35 @@ function Home() {
                 <p className='my-2 text-neutral-400'>Latest Project</p>
 
                 <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 self-center'>
-                  <a className='max-w-sm my-4 hover:scale-90 ease-in duration-300 cursor-pointer'>
-                    <div className=''>
-                      <img
-                        src='/thumbnail-capstone.jpg'
-                        alt='Capstone Project'
-                        className='w-full'
-                      />
-                    </div>
-                    <div className=''>
-                      <p>Capstone Project - Nusantara Trip</p>
-                      <span className='text-center text-base text-neutral-400'>
-                        SIB Dicoding Cyle 6 Front End & Back End
-                      </span>
-                    </div>
-                  </a>
+                  <Card href='https://nusantara-trip.vercel.app/'>
+                    <Card.Header
+                      img='/thumbnail-capstone.jpg'
+                      title='Capstone Project Nusantara Trip'
+                    />
+                    <Card.Body title='Capstone Project - Nusantara Trip'>
+                      SIB Dicoding Cyle 6 Front End & Back End
+                    </Card.Body>
+                  </Card>
 
-                  {/* <div className='bg-blue-500'>asd</div>
-                  <div className='bg-yellow-500'>asd</div> */}
+                  <Card>
+                    <Card.Header
+                      img='/thumbnail-capstone.jpg'
+                      title='Capstone Project Nusantara Trip'
+                    />
+                    <Card.Body title='Capstone Project - Nusantara Trip'>
+                      SIB Dicoding Cyle 6 Front End & Back End
+                    </Card.Body>
+                  </Card>
+
+                  <Card>
+                    <Card.Header
+                      img='/thumbnail-capstone.jpg'
+                      title='Capstone Project Nusantara Trip'
+                    />
+                    <Card.Body title='Capstone Project - Nusantara Trip'>
+                      SIB Dicoding Cyle 6 Front End & Back End
+                    </Card.Body>
+                  </Card>
                 </div>
               </div>
             </div>
