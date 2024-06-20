@@ -66,9 +66,10 @@ function Home() {
                   <h1 className='text-xl lg:text-3xl font-semibold'>
                     Hello, Everyone{" "}
                   </h1>
-                  <ul className='list-disc ms-5 flex flex-wrap gap-4 my-2'>
+                  <ul className='ml-5 flex list-disc flex-col gap-1 text-neutral-600 dark:text-neutral-400 lg:flex-row lg:gap-8 my-2'>
                     <li>6th Semester Student</li>
-                    <li className='ms-2'>Universitas Esa Unggul</li>
+
+                    <li className=''>Universitas Esa Unggul</li>
                   </ul>
                 </div>
                 <div className='animate-bounce'>
