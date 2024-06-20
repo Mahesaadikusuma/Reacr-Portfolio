@@ -18,8 +18,9 @@ function Home() {
       <NavbarLayout />
       <main>
         <div className='container my-10'>
-          <div className='grid grid-cols-2 lg:grid-cols-12 gap-x-10'>
-            <div className=' hidden lg:grid rounded-3xl shadow-xl'>
+          <div className='grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-10  px-2'>
+            {/* grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-10 */}
+            <div className='lg:col-span-3 hidden lg:block rounded-3xl shadow-xl'>
               <div className='sticky top-0  p-3 h-screen  '>
                 <div className='flex justify-between'>
                   <div className='flex items-center gap-3'>
@@ -59,8 +60,7 @@ function Home() {
                 </div>
               </div>
             </div>
-
-            <div className=' lg:col-span-9  '>
+            <div className='col-span-12 lg:col-span-9  '>
               <div className='flex justify-between flex-wrap '>
                 <div className=''>
                   <h1 className='text-xl lg:text-3xl font-semibold'>
