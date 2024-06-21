@@ -1,16 +1,19 @@
 import { TiHome } from "react-icons/ti";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const List = (props) => {
   const { route, children, Icon } = props;
+  const location = useLocation();
   return (
-    <li className='flex items-center gap-3 text-lg hover:bg-neutral-100 p-2'>
+    <Link
+      to={route}
+      className={`flex items-center gap-3 text-lg hover:bg-neutral-100 p-2 ${
+        location.pathname === route ? "font-semibold" : "font-normal"
+      }`}>
       {/* <TiHome /> */}
       {Icon && <Icon />}
-      <Link to={route} className='text-neutral-800 font-bold'>
-        {children}
-      </Link>
-    </li>
+      <span className='text-neutral-800 '>{children}</span>
+    </Link>
   );
 };
 

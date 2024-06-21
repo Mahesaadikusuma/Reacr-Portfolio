@@ -37,46 +37,46 @@ const NavbarLayout = (props) => {
         <div className='flex flex-col justify-center relative lg:hidden h-full'>
           <div
             id='sidebar'
-            className={`w-1/2 bg-neutral-50 absolute z-10 h-screen left-0 -top-16 ${
-              isSidebarVisible ? "translate-x-0" : "-translate-x-full"
+            className={`w-full bg-neutral-50 absolute z-10 h-screen left-0 -top-16 ${
+              isSidebarVisible
+                ? "translate-x-0 translate-y-16"
+                : "-translate-y-full"
             } transition-transform duration-300`}>
-            <div className='flex justify-between p-2 items-center'>
-              <div className='flex items-center gap-3'>
-                <span className='w-5 h-5 animate-bounce bg-blue-500 rounded-full flex items-center'></span>
-                <p className='font-bold text-neutral-700'> Hire Me</p>
+            <div className='px-5 my-5'>
+              {/* <div className='flex items-center gap-5'>
+                <div className='flex items-center p-2 hover:bg-slate-300 rounded-full cursor-pointer gap'>
+                  <MdDarkMode />
+                </div>
+
+                <div className='cursor-pointer'>
+                  <RxHamburgerMenu
+                    className='text-2xl'
+                    onClick={handleNavbar}
+                  />
+                </div>
+              </div> */}
+              <div className='flex justify-between'>
+                <h1>Mahesa Adi Kusuma</h1>
+                <div className='hover:bg-slate-200 rounded-full cursor-pointer p-2'>
+                  <MdDarkMode />
+                </div>
               </div>
-              <div className='flex items-center p-2 hover:bg-slate-300 rounded-full cursor-pointer'>
-                <MdDarkMode />
-              </div>
+              <hr className='border-b-2 border-gray-300 my-3' />
             </div>
 
-            <Profile
-              title='Mahesa Adi Kusuma'
-              img='/profile.jpeg'
-              Class='w-20 h-20 rounded-full'
-            />
-            {/* <h1 className='text-center font-bold text-xl'>Mahesa Adi Kusuma</h1>
-            <div className='flex justify-center my-5'>
-              <img
-                src='/profile.jpeg'
-                alt='mahesa'
-                className='w-20 h-20 rounded-full '
-              />
-            </div> */}
-
-            <div className='flex p-5 mt-10'>
+            <div className='flex px-5 '>
               <Navbar>
                 <List route='/' Icon={() => <TiHome />}>
                   {" "}
                   Home
                 </List>
 
-                <List route='/' Icon={() => <GrProjects />}>
+                <List route='/projects' Icon={() => <GrProjects />}>
                   {" "}
                   Project
                 </List>
 
-                <List route='/' Icon={() => <LuLeaf />}>
+                <List route='/about' Icon={() => <LuLeaf />}>
                   {" "}
                   About
                 </List>

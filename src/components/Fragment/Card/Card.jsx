@@ -5,7 +5,7 @@ const Card = (props) => {
   return (
     <Link
       to={href}
-      className='max-w-sm my-4 hover:scale-90 ease-in duration-300 cursor-pointer mx-auto'>
+      className='min-w-[250px] my-4 hover:scale-90 ease-in duration-300 cursor-pointer mx-auto'>
       {children}
     </Link>
   );
@@ -20,7 +20,7 @@ const Header = (props) => {
           // /thumbnail-capstone.jpg
           src={img}
           alt={title}
-          className='w-full'
+          className='h-[150px] w-full object-cover'
         />
       </div>
     </>
