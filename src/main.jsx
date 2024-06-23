@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Projects from "./pages/Projects.jsx";
 import About from "./pages/About.jsx";
+import NusantaraTrip from "./pages/Projects/NusantaraTrip.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,11 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+  },
+
+  {
+    path: "/project/nusantara-trip",
+    element: <NusantaraTrip />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -25,10 +25,10 @@ const Projects = () => {
             Showcase Project in Portfolio
           </p>
 
-          <div className='border-dotted border-t-2 border-neutral-300 my-5'></div>
+          <hr className='border-dotted border-t-2 border-neutral-300 my-5' />
 
           <div className='grid sm:grid-cols-2 gap-5'>
-            <CardProject href={"https://nusantara-trip.vercel.app"}>
+            <CardProject href={"/project/nusantara-trip"}>
               <CardProject.Header img='/thumbnail-capstone.jpg' />
               <CardProject.Body
                 title='Capstone Project'
