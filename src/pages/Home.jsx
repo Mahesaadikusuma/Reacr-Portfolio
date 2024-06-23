@@ -6,6 +6,13 @@ import LayoutContent from "../components/Layouts/Content";
 import SideBarContent from "../components/Layouts/Sidebar/SideBarContent";
 import Sidebar from "../components/Layouts/Sidebar/Sidebar";
 import MainContent from "../components/Layouts/Main/MainContent";
+import Skill from "../components/Fragment/Skill/Skill";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaCss3Alt, FaHtml5, FaLaravel, FaSass } from "react-icons/fa6";
+import { SiLivewire } from "react-icons/si";
+import CardSkill from "../components/Layouts/CardSkill";
+import { RiTailwindCssFill } from "react-icons/ri";
+import LayoutSkill from "../components/Fragment/Skill/LayoutSkill";
 
 function Home() {
   return (
@@ -80,7 +87,9 @@ function Home() {
               </Card>
             </div>
 
-            <div className=' border-t border-gray-300 dark:border-neutral-700 my-5'></div>
+            <div className='border-t border-gray-300 dark:border-neutral-700 my-5'></div>
+
+            <LayoutSkill />
           </div>
         </MainContent>
       </LayoutContent>

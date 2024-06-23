@@ -4,9 +4,13 @@ import LayoutContent from "../components/Layouts/Content";
 import Sidebar from "../components/Layouts/Sidebar/Sidebar";
 import SideBarContent from "../components/Layouts/Sidebar/SideBarContent";
 import MainContent from "../components/Layouts/Main/MainContent";
-import { IoCodeSlashSharp } from "react-icons/io5";
-import { FaLaravel, FaSass } from "react-icons/fa6";
+import { IoCodeSlashSharp, IoLogoJavascript } from "react-icons/io5";
+import { FaCss3Alt, FaHtml5, FaLaravel, FaSass } from "react-icons/fa6";
 import { SiLivewire } from "react-icons/si";
+import Skill from "../components/Fragment/Skill/Skill";
+import { RiTailwindCssFill } from "react-icons/ri";
+import CardSkill from "../components/Layouts/CardSkill";
+import LayoutSkill from "../components/Fragment/Skill/LayoutSkill";
 
 const About = () => {
   return (
@@ -37,28 +41,7 @@ const About = () => {
             <hr className='border-dotted border-t-2 border-neutral-300 my-10' />
 
             <div className=''>
-              <div className='flex items-center gap-3 text-2xl'>
-                <IoCodeSlashSharp />
-                <h2 className='text-neutral-800 font-semibold'>Skill</h2>
-              </div>
-              <p className='text-neutral-500 my-2 text-base'>My Skill</p>
-
-              <div className='flex items-center gap-3 flex-wrap'>
-                <div className='flex items-center gap-3  shadow-md px-4 py-2 rounded-full'>
-                  <FaLaravel className='text-red-500 text-2xl' />
-                  <p className='text-neutral-800 text-lg '>Laravel</p>
-                </div>
-
-                <div className='flex items-center gap-3  shadow-md px-4 py-2 rounded-full'>
-                  <FaSass className='text-pink-500 text-2xl' />
-                  <p className='text-neutral-800 text-lg '>Sass</p>
-                </div>
-
-                <div className='flex items-center gap-3  shadow-md px-4 py-2 rounded-full'>
-                  <SiLivewire className='text-pink-500 text-2xl' />
-                  <p className='text-neutral-800 text-lg '>Livewire</p>
-                </div>
-              </div>
+              <LayoutSkill />
             </div>
           </div>
         </MainContent>

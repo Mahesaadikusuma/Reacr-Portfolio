@@ -22,7 +22,7 @@ const NavbarLayout = (props) => {
             <div className=''>
               <img
                 src='/profile.jpeg'
-                alt=''
+                alt='mahesa profile'
                 className='rounded-full w-12 h-12'
               />
             </div>
