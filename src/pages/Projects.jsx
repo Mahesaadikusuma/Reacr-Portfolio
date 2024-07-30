@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import LayoutContent from "../components/Layouts/Content";
 import MainContent from "../components/Layouts/Main/MainContent";
 import NavbarLayout from "../components/Layouts/Navbar";
@@ -6,8 +6,9 @@ import SideBarContent from "../components/Layouts/Sidebar/SideBarContent";
 import Sidebar from "../components/Layouts/Sidebar/Sidebar";
 import { FaBootstrap, FaLaravel, FaSass } from "react-icons/fa";
 import { SiLivewire, SiWebpack } from "react-icons/si";
-import CardProject from "../components/Fragment/Card/CardPoject";
+
 import { RiTailwindCssFill } from "react-icons/ri";
+import CardProject from "../components/Fragment/Card/CardPoject";
 
 const Projects = () => {
   return (
@@ -42,11 +43,11 @@ const Projects = () => {
               </CardProject.Body>
             </CardProject>
 
-            <CardProject>
+            <CardProject href={"/project/furniluxe"}>
               <CardProject.Header img='/Furniluxe.webp' />
               <CardProject.Body
                 title='Furniluxe '
-                description='Full Satck Laravel Web Developer'>
+                description='Full Stack Laravel Web Developer'>
                 <CardProject.Icon>
                   <FaLaravel className='text-red-500' />
                   <FaSass className='text-pink-500' />
@@ -56,11 +57,11 @@ const Projects = () => {
               </CardProject.Body>
             </CardProject>
 
-            <CardProject>
+            <CardProject href={"/project/store-online"}>
               <CardProject.Header img='/Store.webp' />
               <CardProject.Body
                 title='Store Online'
-                description='Full Satck Laravel Web Developer Membuat Web Toko Online'>
+                description='Full Stack Laravel Web Developer Membuat Web Toko Online'>
                 <CardProject.Icon>
                   <FaLaravel className='text-red-500' />
                   <FaSass className='text-pink-500' />
@@ -69,11 +70,11 @@ const Projects = () => {
               </CardProject.Body>
             </CardProject>
 
-            <CardProject>
+            <CardProject href={"/project/nomads"}>
               <CardProject.Header img='/Nomads.webp' />
               <CardProject.Body
                 title='Nomads'
-                description='Full Satck Laravel Web Developer Membuat Web Travel'>
+                description='Full Stack Laravel Web Developer Membuat Web Travel'>
                 <CardProject.Icon>
                   <FaLaravel className='text-red-500' />
                   <FaSass className='text-pink-500' />

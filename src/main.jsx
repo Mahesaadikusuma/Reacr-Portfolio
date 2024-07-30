@@ -7,6 +7,8 @@ import Home from "./pages/Home.jsx";
 import Projects from "./pages/Projects.jsx";
 import About from "./pages/About.jsx";
 import NusantaraTrip from "./pages/Projects/NusantaraTrip.jsx";
+import JokeComponent from "./pages/joke.jsx";
+import Furniluxe from "./pages/Projects/Furniluxe.jsx";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +29,16 @@ const router = createBrowserRouter([
   {
     path: "/project/nusantara-trip",
     element: <NusantaraTrip />,
+  },
+
+  {
+    path: "/project/furniluxe",
+    element: <Furniluxe />,
+  },
+
+  {
+    path: "/joke",
+    element: <JokeComponent />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(

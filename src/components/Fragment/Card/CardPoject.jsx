@@ -1,16 +1,22 @@
 import { Fragment } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const CardProject = (props) => {
   const { children, href } = props;
+  const location = useLocation();
+
+  // Memeriksa apakah tautan harus aktif berdasarkan lokasi saat ini
+  const isActive = location.pathname === href;
   return (
     <Fragment>
       {/* /projects/capstone */}
-      <Link
+      <NavLink
         to={href}
-        className='min-w-sm  shadow-md hover:scale-95 transition-all ease-in duration-300 '>
+        className={`min-w-sm shadow-md hover:scale-95 transition-all ease-in duration-300 ${
+          isActive ? "border-4 border-blue-500" : ""
+        }`}>
         {children}
-      </Link>
+      </NavLink>
     </Fragment>
   );
 };
